@@ -1,0 +1,15 @@
+server:
+   port: 8087
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/biblioteca_api?createDatabaseIfNotExist=true
+    username: iuri
+    password: 123456
