@@ -38,7 +38,7 @@ public class AutorController {
         return AutorResponse.converter(autorService.atualizar(id, autorRequest));
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public void deletar(Integer id){
         autorService.deletar(id);
     }
