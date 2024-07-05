@@ -1,6 +1,7 @@
 package com.example.projeto.biblioteca.model;
 
 import com.example.projeto.biblioteca.dto.LivroRequest;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -21,6 +22,7 @@ public class Livro {
     private String titulo;
     @ManyToOne
     @JoinColumn(name = "fk_autor")
+    @JsonBackReference
     private Autor autor;
     @Column(name = "ano_lancameto")
     private Integer anoLancamento;
@@ -30,7 +32,7 @@ public class Livro {
     @Column(name = "ano_cadastro")
     private LocalDateTime dataCadastro;
 
-    public static Livro converterParaLivro(LivroRequest livroRequest){
+    public static Livro converter(LivroRequest livroRequest){
         return Livro.builder()
                 .titulo(livroRequest.getTitulo())
                 .autor(new Autor(livroRequest.getAutor()))

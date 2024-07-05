@@ -18,7 +18,7 @@ public class AutorResponse {
     private LocalDateTime dataCadastro;
     private List<Livro> livros;
 
-    public static AutorResponse converterParaAutorResponse(Autor autor) {
+    public static AutorResponse converter(Autor autor) {
         var response = new AutorResponse();
         BeanUtils.copyProperties(autor, response);
         return response;

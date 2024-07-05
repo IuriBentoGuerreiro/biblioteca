@@ -19,7 +19,7 @@ public class LivroController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Livro salvar (@RequestBody LivroRequest livroRequest){
+    public LivroResponse salvar (@RequestBody LivroRequest livroRequest){
         return livroService.salvar(livroRequest);
     }
 

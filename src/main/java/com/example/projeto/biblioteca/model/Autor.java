@@ -33,7 +33,7 @@ public class Autor {
         this.id = id;
     }
 
-    public static Autor converterParaAutor(AutorRequest autorRequest){
+    public static Autor converter(AutorRequest autorRequest){
         return Autor.builder()
                 .nome(autorRequest.getNome())
                 .dataNascimento(autorRequest.getDataNascimento())
