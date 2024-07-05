@@ -12,7 +12,7 @@ import java.util.List;
 
 @Tag(name = "Livro")
 @RestController
-@RequestMapping("biblioteca")
+@RequestMapping("/livro")
 public class LivroController {
 
     @Autowired

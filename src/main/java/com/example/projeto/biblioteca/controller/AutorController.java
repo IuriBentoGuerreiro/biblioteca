@@ -12,7 +12,7 @@ import java.util.List;
 
 @Tag(name = "Autor")
 @RestController
-@RequestMapping("autor")
+@RequestMapping("/autor")
 public class AutorController {
 
     @Autowired
@@ -44,7 +44,7 @@ public class AutorController {
 
     @Operation(summary = "Deletar")
     @DeleteMapping("/{id}")
-    public void deletar(Integer id){
+    public void deletar(@PathVariable Integer id){
         autorService.deletar(id);
     }
 }
