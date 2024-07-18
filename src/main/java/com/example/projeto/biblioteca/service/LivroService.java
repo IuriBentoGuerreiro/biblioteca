@@ -9,16 +9,35 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
 public class LivroService {
 
     @Autowired
-    private LivroRepository livroRepository;
+    private final LivroRepository livroRepository;
+
+    @Autowired
+    private final AutorService autorService;
+
+    public LivroService(LivroRepository livroRepository, AutorService autorService){
+        this.livroRepository = livroRepository;
+        this.autorService = autorService;
+    }
 
     public LivroResponse salvar(LivroRequest livroRequest){
-        return LivroResponse.converter(livroRepository.save(Livro.converter(livroRequest)));
+        var livro = livroRepository.save(Livro.builder()
+                        .anoLancamento(livroRequest.getAnoLancamento())
+                        .autor(autorService.pegarPorId(livroRequest.getAutor()))
+                        .dataCadastro(LocalDateTime.now())
+                        .genero(livroRequest.getGenero())
+                        .isbn(livroRequest.getIsbn())
+                        .titulo(livroRequest.getTitulo())
+                        .sinopse(livroRequest.getSinopse())
+                .build());
+
+        return LivroResponse.converter(livro);
     }
 
     public List<LivroResponse> buscarTodos() {

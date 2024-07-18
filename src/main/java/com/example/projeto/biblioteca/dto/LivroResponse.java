@@ -12,12 +12,12 @@ public class LivroResponse {
 
     private Integer id;
     private String titulo;
-    private Autor autor;
     private Integer anoLancamento;
     private String genero;
     private String isbn;
     private String sinopse;
     private LocalDateTime dataCadastro;
+    private Autor autor;
 
     public static LivroResponse converter(Livro livro){
         return LivroResponse.builder()
