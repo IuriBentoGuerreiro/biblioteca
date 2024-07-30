@@ -24,7 +24,7 @@ public class UsuarioResponse {
     private List<Emprestimo> historicoEmprestimos;
     private List<Reserva> reservas;
 
-    public UsuarioResponse converter(Usuario usuario){
+    public static UsuarioResponse converter(Usuario usuario){
         return UsuarioResponse.builder()
                 .id(usuario.getId())
                 .nome(usuario.getNome())
