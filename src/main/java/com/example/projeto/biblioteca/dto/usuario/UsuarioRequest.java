@@ -1,4 +1,4 @@
-package com.example.projeto.biblioteca.dto;
+package com.example.projeto.biblioteca.dto.usuario;
 
 import lombok.Data;
 

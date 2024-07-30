@@ -1,6 +1,6 @@
 package com.example.projeto.biblioteca.model;
 
-import com.example.projeto.biblioteca.dto.LivroRequest;
+import com.example.projeto.biblioteca.dto.livro.LivroRequest;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;

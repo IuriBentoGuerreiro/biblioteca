@@ -1,4 +1,4 @@
-package com.example.projeto.biblioteca.dto;
+package com.example.projeto.biblioteca.dto.autor;
 
 import lombok.Data;
 

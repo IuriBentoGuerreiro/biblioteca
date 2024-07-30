@@ -1,4 +1,4 @@
-package com.example.projeto.biblioteca.dto;
+package com.example.projeto.biblioteca.dto.reserva;
 
 import com.example.projeto.biblioteca.model.Livro;
 import com.example.projeto.biblioteca.model.Reserva;

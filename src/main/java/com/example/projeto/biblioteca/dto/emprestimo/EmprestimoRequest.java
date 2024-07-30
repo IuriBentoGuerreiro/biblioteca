@@ -1,4 +1,4 @@
-package com.example.projeto.biblioteca.dto;
+package com.example.projeto.biblioteca.dto.emprestimo;
 
 import lombok.Data;
 import java.math.BigDecimal;

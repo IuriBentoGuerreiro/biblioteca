@@ -1,7 +1,7 @@
 package com.example.projeto.biblioteca.service;
 
-import com.example.projeto.biblioteca.dto.LivroRequest;
-import com.example.projeto.biblioteca.dto.LivroResponse;
+import com.example.projeto.biblioteca.dto.livro.LivroRequest;
+import com.example.projeto.biblioteca.dto.livro.LivroResponse;
 import com.example.projeto.biblioteca.model.Livro;
 import com.example.projeto.biblioteca.repository.LivroRepository;
 import org.springframework.beans.BeanUtils;

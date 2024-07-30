@@ -1,6 +1,6 @@
 package com.example.projeto.biblioteca.model;
 
-import com.example.projeto.biblioteca.dto.ReservaRequest;
+import com.example.projeto.biblioteca.dto.reserva.ReservaRequest;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

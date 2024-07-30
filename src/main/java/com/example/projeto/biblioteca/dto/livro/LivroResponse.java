@@ -1,4 +1,4 @@
-package com.example.projeto.biblioteca.dto;
+package com.example.projeto.biblioteca.dto.livro;
 
 import com.example.projeto.biblioteca.model.Autor;
 import com.example.projeto.biblioteca.model.Livro;

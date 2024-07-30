@@ -1,7 +1,7 @@
 package com.example.projeto.biblioteca.controller;
 
-import com.example.projeto.biblioteca.dto.LivroRequest;
-import com.example.projeto.biblioteca.dto.LivroResponse;
+import com.example.projeto.biblioteca.dto.livro.LivroRequest;
+import com.example.projeto.biblioteca.dto.livro.LivroResponse;
 import com.example.projeto.biblioteca.service.LivroService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

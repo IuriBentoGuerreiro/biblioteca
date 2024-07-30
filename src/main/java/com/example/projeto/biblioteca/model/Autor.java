@@ -1,6 +1,6 @@
 package com.example.projeto.biblioteca.model;
 
-import com.example.projeto.biblioteca.dto.AutorRequest;
+import com.example.projeto.biblioteca.dto.autor.AutorRequest;
 import jakarta.persistence.*;
 import lombok.*;
 

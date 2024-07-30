@@ -1,6 +1,6 @@
 package com.example.projeto.biblioteca.model;
 
-import com.example.projeto.biblioteca.dto.EmprestimoRequest;
+import com.example.projeto.biblioteca.dto.emprestimo.EmprestimoRequest;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

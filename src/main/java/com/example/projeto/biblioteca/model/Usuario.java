@@ -1,7 +1,6 @@
 package com.example.projeto.biblioteca.model;
 
-import com.example.projeto.biblioteca.dto.EmprestimoRequest;
-import com.example.projeto.biblioteca.dto.UsuarioRequest;
+import com.example.projeto.biblioteca.dto.usuario.UsuarioRequest;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

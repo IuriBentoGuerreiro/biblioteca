@@ -1,7 +1,7 @@
 package com.example.projeto.biblioteca.controller;
 
-import com.example.projeto.biblioteca.dto.AutorRequest;
-import com.example.projeto.biblioteca.dto.AutorResponse;
+import com.example.projeto.biblioteca.dto.autor.AutorRequest;
+import com.example.projeto.biblioteca.dto.autor.AutorResponse;
 import com.example.projeto.biblioteca.service.AutorService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

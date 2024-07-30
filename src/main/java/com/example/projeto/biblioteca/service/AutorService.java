@@ -1,7 +1,7 @@
 package com.example.projeto.biblioteca.service;
 
-import com.example.projeto.biblioteca.dto.AutorRequest;
-import com.example.projeto.biblioteca.dto.AutorResponse;
+import com.example.projeto.biblioteca.dto.autor.AutorRequest;
+import com.example.projeto.biblioteca.dto.autor.AutorResponse;
 import com.example.projeto.biblioteca.model.Autor;
 import com.example.projeto.biblioteca.repository.AutorRepository;
 import org.springframework.beans.BeanUtils;
