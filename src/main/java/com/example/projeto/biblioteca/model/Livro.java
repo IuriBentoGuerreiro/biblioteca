@@ -32,6 +32,8 @@ public class Livro {
     @Column(name = "ano_cadastro")
     private LocalDateTime dataCadastro;
 
+    public Livro(Integer id){this.id = id;}
+
     public static Livro converter(LivroRequest livroRequest){
         return Livro.builder()
                 .titulo(livroRequest.getTitulo())
