@@ -20,10 +20,6 @@ public class Livro {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String titulo;
-    @ManyToOne
-    @JoinColumn(name = "fk_autor")
-    @JsonBackReference
-    private Autor autor;
     @Column(name = "ano_lancameto")
     private Integer anoLancamento;
     private String genero;
@@ -31,6 +27,13 @@ public class Livro {
     private String sinopse;
     @Column(name = "ano_cadastro")
     private LocalDateTime dataCadastro;
+    @Column(name = "quantidade_estoque")
+    private Integer qunatidadeEstoque;
+
+    @ManyToOne
+    @JoinColumn(name = "fk_autor")
+    @JsonBackReference
+    private Autor autor;
 
     public Livro(Integer id){this.id = id;}
 
@@ -43,6 +46,7 @@ public class Livro {
                 .isbn(livroRequest.getIsbn())
                 .sinopse(livroRequest.getSinopse())
                 .dataCadastro(LocalDateTime.now())
+                .qunatidadeEstoque(livroRequest.getQuantidadeEstoque())
                 .build();
     }
 }

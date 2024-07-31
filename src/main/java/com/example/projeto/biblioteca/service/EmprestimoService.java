@@ -30,6 +30,7 @@ public class EmprestimoService {
                         .dataEmprestimo(emprestimoRequest.getDataEmprestimo())
                         .dataDevolucaoPrevista(emprestimoRequest.getDataDevolucaoPrevista())
                         .dataDevolucaoReal(emprestimoRequest.getDataDevolucaoReal())
+                        .multa(emprestimoRequest.getMulta())
                 .build());
 
         return EmprestimoResponse.converter(emprestimo);

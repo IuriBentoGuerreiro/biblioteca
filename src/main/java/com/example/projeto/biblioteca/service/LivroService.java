@@ -35,6 +35,7 @@ public class LivroService {
                         .isbn(livroRequest.getIsbn())
                         .titulo(livroRequest.getTitulo())
                         .sinopse(livroRequest.getSinopse())
+                        .qunatidadeEstoque(livroRequest.getQuantidadeEstoque())
                 .build());
 
         return LivroResponse.converter(livro);

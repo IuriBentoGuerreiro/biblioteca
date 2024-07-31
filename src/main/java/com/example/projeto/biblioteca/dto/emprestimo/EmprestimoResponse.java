@@ -23,6 +23,7 @@ public class EmprestimoResponse {
 
     public static EmprestimoResponse converter(Emprestimo emprestimo) {
         return EmprestimoResponse.builder()
+                .id(emprestimo.getId())
                 .usuario(emprestimo.getUsuario())
                 .livro(emprestimo.getLivro())
                 .dataEmprestimo(emprestimo.getDataEmprestimo())

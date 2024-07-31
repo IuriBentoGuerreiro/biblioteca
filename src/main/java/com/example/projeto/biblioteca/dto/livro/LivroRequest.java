@@ -11,4 +11,5 @@ public class LivroRequest {
     private String genero;
     private String isbn;
     private String sinopse;
+    private Integer quantidadeEstoque;
 }

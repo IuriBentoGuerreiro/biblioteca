@@ -17,6 +17,7 @@ public class LivroResponse {
     private String isbn;
     private String sinopse;
     private LocalDateTime dataCadastro;
+    private Integer quantidadeEstoque;
     private Autor autor;
 
     public static LivroResponse converter(Livro livro){
@@ -29,6 +30,7 @@ public class LivroResponse {
                 .isbn(livro.getIsbn())
                 .sinopse(livro.getSinopse())
                 .dataCadastro(LocalDateTime.now())
+                .quantidadeEstoque(livro.getQunatidadeEstoque())
                 .build();
     }
 }
